@@ -1,0 +1,20 @@
+$primary-color: rgb(248, 223, 1);
+$secondary-color: rgb(91, 13, 118);
+//$border-dark: rgba($base-color, 0.88);
+
+$skills-first-color: #d2b5de;
+$skills-second-color: #a4acd0;;
+$skills-third-color: #a1d1d1;
+
+$skills-values: (
+    1: (#d2b5de, 60%),
+    2: (#a4acd0, 80%),
+    3: (#a1d1d1, 50%)
+);
+
+$screen-sm-max: 576px;
+$screen-md-max: 768px;
+$screen-lg-max: 992px;
+$screen-xl-max: 1200px;
+
+

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My Website</title>
+  <link rel="stylesheet" href="scss/style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="#" class="logo">zestify</a>
+
+      <ul class="navigation">
+        <li class="open" id="open"><i class="fa-solid fa-xmark"></i></li>
+        <li class="hidden-mobile"><a href="#about">About</a></li>
+        <li class="hidden-mobile"><a href="#projects">Portfolio</a></li>
+        <li class="hidden-mobile"><a href="#blog">Blog</a></li>
+        <li class="hidden-mobile"><a href="#team">Our Team</a></li>
+        <li class="hidden-mobile"><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <div class="main-banner">
+      <h2>Clean<span>.</span>Slick<span>.</span>Pixel</h2>
+      <h2>Perfect</h2>
+      <p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus ac neque
+        dignissim lacus sagittis tristique quis eleifend turpis.</p>
+
+      <button class="learn-more">Learn more</button>
+      <button class="download">Download</button>
+    </div>
+  </header>
+
+  <article class="about" id="about">
+    <div class="info">
+      <h1>About</h1>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+        a type specimen book.</p>
+    </div>
+
+    <div class="skills-box box">
+      <div class="slide">
+        <div class="value">60%</div>
+        <div class="slider">
+          <div class="slider-progress"></div>
+        </div>
+
+        <div class="slide-text">
+          <i class="fa-solid fa-font"></i>Typography
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="value">80%</div>
+        <div class="slider">
+          <div class="slider-progress"></div>
+        </div>
+
+        <div class="slide-text">
+          <i class="fa-sharp fa-solid fa-pen"></i> Design
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="value">50%</div>
+        <div class="slider">
+          <div class="slider-progress"></div>
+        </div>
+        <div class="slide-text">
+          <i class="fa-solid fa-code"></i> Development
+        </div>
+      </div>
+    </div>
+
+  </article>
+
+  <article class="projects" id="projects">
+    <div class="info">
+      <h1>Projects</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+
+    <div class="projects-box">
+      <div class="project"><img src="photos/header.jpg"></div>
+      <div class="project"><img src="photos/header.jpg"></div>
+      <div class="project"><img src="photos/header.jpg"></div>
+      <div class="project"><img src="photos/header.jpg"></div>
+    </div>
+  </article>
+
+  <article id="blog" class="blog">
+    <div class="info">
+      <h1>Latest News</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+      <button>See blog</button>
+    </div>
+
+    <div class="posts-box box">
+      <div class="post">
+        <img src="photos/header.jpg">
+
+        <div class="post-text">
+          <h3>Duis suscipit tempor</h3>
+          <span>Proin convallis nibh vel massa porttitor, vel posuere enim cursus. Efficitur id sapien
+            nec, iaculis convallis leo.</span>
+        
+          <button class="read-more">> Read more</button>
+        </div>
+      </div>
+
+      <div class="post">
+        <img src="photos/header.jpg">
+
+        <div class="post-text">
+          <h3>Duis suscipit tempor</h3>
+          <span>Proin convallis nibh vel massa porttitor, vel posuere enim cursus. Efficitur id sapien
+            nec, iaculis convallis leo.</span>
+
+          <button class="read-more">> Read more</button>
+        </div>
+      </div>
+
+      <div class="post">
+        <img src="photos/header.jpg">
+
+        <div class="post-text">
+          <h3>Duis suscipit tempor</h3>
+          <span>Proin convallis nibh vel massa porttitor, vel posuere enim cursus. Efficitur id sapien
+            nec, iaculis convallis leo.</span>
+
+          <button class="read-more">> Read more</button>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <article id="counter" class="counter">
+    <div class="counter-single">
+      <h2>200</h2>
+      <span>PROJECTS</span>
+    </div>
+
+    <div class="counter-single">
+      <h2>200</h2>
+      <span>PROJECTS</span>
+    </div>
+
+    <div class="counter-single">
+      <h2>200</h2>
+      <span>PROJECTS</span>
+    </div>
+  </article>
+
+  
+  <article id="team" class="team">
+    <div class="info">
+      <h1>Team</h1>
+      <p>Meet the people that are going to take your business to the next level.</p>
+    </div>
+
+    <div class="team-box box">
+      <div class="team-person">
+        <div class="team-person-photo"><img src="photos/header.jpg" /></div>
+        <div class="team-person-info">
+          <h3>Mark Lawrance</h3>
+          <h4>Web Designer</h4>
+          <p>Creative, detail-oriented, always focused.</p>
+          <div class="team-person-social">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="team-person">
+        <div class="team-person-photo"><img src="photos/header.jpg" /></div>
+        <div class="team-person-info">
+          <h3>Mark Lawrance</h3>
+          <h4>Web Designer</h4>
+          <p>Creative, detail-oriented, always focused.</p>
+          <div class="team-person-social">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="team-person">
+        <div class="team-person-photo"><img src="photos/header.jpg" /></div>
+        <div class="team-person-info">
+          <h3>Mark Lawrance</h3>
+          <h4>Web Designer</h4>
+          <p>Creative, detail-oriented, always focused.</p>
+          <div class="team-person-social">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!--
+  <article id="contact" class="contact">
+    <div class="info">
+      <h1>Contact us</h1>
+    </div>
+
+    <div class="contact-detail box">
+      <div class="contact-detail-single">
+        <div class="contact-detail-single-name">Address</div>
+        <div class="contact-detail-single-value">Street 221B Baker Street, <br /> London, UK</div>
+      </div>
+
+      <div class="contact-detail-single">
+        <div class="contact-detail-single-name">Customer Support</div>
+        <div class="contact-detail-single-value">E-mail: contact@site.com<br /> Phone: (555) 555-5555</div>
+      </div>
+
+      <div class="contact-detail-single social">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
+      </div>
+
+
+
+      <form action="#" class="contact-form box">
+        <div class="contact-form-single">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="firstname" required>
+        </div>
+    
+        <div class="contact-form-single">
+          <label for="mail">E-mail</label>
+          <input type="email" id="mail" name="mail" required>
+        </div>
+
+        <div class="contact-form-single">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject">
+        </div>
+
+        <div class="contact-form-message">
+          <label for="message">Message</label>
+          <textarea type="text" id="message" name="message" rows="10" required></textarea>
+        </div>
+
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </article>
+
+-->
+
+
+  <script src="index.js"></script>
+
+</body>
+
+</html>

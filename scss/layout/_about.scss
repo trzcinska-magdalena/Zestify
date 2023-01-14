@@ -1,0 +1,67 @@
+article {
+    .skills-box {
+        .slide {
+            width: 30%;
+            
+            @include skills-color('.value');
+            @include skills-color('.value::after');
+            .value {
+                width: 50px;
+                height: 24px;
+                position: relative;
+                color: #fff;
+                font-size: 14px;
+                line-height: 24px;
+                text-align: center;
+                border-radius: 3px;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    display: block;
+                    width: 0;
+                    z-index: 1;
+                    border-style: solid;
+                    border-width: 4px 4px 0;
+                    bottom: -4px;
+                    left: 50%;
+                    margin-left: -4px;
+                }
+            }
+
+            @include skills-color('.slider .slider-progress');
+            @include skills-color('.slider .slider-progress::after');
+            .slider {
+                margin-top: 13px;
+                background-color: #E8E8E8;
+                width: 100%;
+
+                .slider-progress {
+                    height: 2px;
+                    position: relative;
+
+                    &::after {
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        right: -4px;
+                        top: -2.5px;
+                        width: 8px;
+                        height: 8px;
+                        border-radius: 50%;
+                    }
+                }
+            }
+
+            @include skills-color('.slide-text');
+            .slide-text {
+                margin: 20px 0;
+                text-align: left;
+
+                i {
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
+}

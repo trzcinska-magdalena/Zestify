@@ -1,0 +1,43 @@
+article.counter {
+    @include flex(space-between, row);
+    padding: 20px 0;
+    position: relative;
+    background-image: url(../photos/header.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include md {
+        @include flex(space-between, column);
+        padding: 0;
+    }
+
+    &:after {
+        background-color: rgba(245, 217, 31, 0.714);
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        width: 100%; 
+    }
+
+    .counter-single {
+        margin: 10px 0;
+        z-index: 200;
+        color: #fff;
+        width: 30%;
+
+        &:nth-child(2) {
+            border-left: 1px solid #fff;
+            border-right: 1px solid #fff;
+
+            @include md {
+                border: none;
+            }
+        }
+
+        h2 {
+            font-size: 64px;
+        }
+    }
+}

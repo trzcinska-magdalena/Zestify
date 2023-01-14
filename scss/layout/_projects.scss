@@ -1,0 +1,27 @@
+article.projects {
+    background-image: url("photos/pattern.png");
+
+    .projects-box {
+        display: flex;
+        flex-wrap: wrap;
+
+        .project {
+            width: 25%;
+
+            @include md {
+                width: 50%;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                transition: .2s;
+            }
+
+            &:hover img {
+                cursor: pointer;
+                opacity: 0.8;
+            }
+        }
+    }
+}

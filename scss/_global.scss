@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+    color: rgb(84, 81, 81);
+}
+
+h1 {
+    font-size: 46px;
+    font-weight: bolder;
+    margin: 20px 0 0 0 ;
+
+    @include md {
+        font-size: 38px;
+    }
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 60px;
+    font-weight: bolder;
+
+    @include md {
+        font-size: 48px;
+    }
+}
+
+p {
+    @include md {
+        font-size: 13px;
+    }
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+button {
+    width: 150px;
+    height: 45px;
+    background: transparent;
+    color: white;
+    outline: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+    border: none;
+}
+
+article {
+    @include flex(center, column);
+    align-items: center;
+    text-align: center;
+}
+
+article div.info {
+    width: 60%;
+}
+
+article div p {
+    color: rgb(164, 159, 159);
+}
+
+article .box {
+    @include flex(space-between, row);
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 5% 0;
+}
+
+article.about .skills-box,
+article.team .team-box,
+article.contact .contact-form {
+    @include md {
+        flex-direction: column;
+    }
+}
+
+article.about .skills-box .slide,
+article.blog .posts-box .post,
+article.team .team-box .team-person {
+    @include md {
+        width: 100%;
+    }
+}

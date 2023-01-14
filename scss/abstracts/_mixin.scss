@@ -1,0 +1,77 @@
+@mixin sm {
+    @media (max-width: #{$screen-sm-max}) {
+        @content;
+    }
+}
+ 
+ @mixin md {
+    @media (max-width: #{$screen-md-max}) {
+        @content;
+    }
+}
+ 
+ @mixin lg {
+    @media (max-width: #{$screen-lg-max}) {
+        @content;
+    }
+}
+ 
+ @mixin xl {
+    @media (max-width: #{$screen-xl-max}) {
+        @content;
+    }
+}
+
+@mixin flex($justify-content, $flex-direction) {
+    display: flex;
+    justify-content: $justify-content;
+    flex-direction: $flex-direction;
+}
+
+@mixin skills-color($selectors) {
+    @each $i, $skill in $skills-values {
+        &:nth-child(#{$i}) #{$selectors} {
+            @include add-styles($selectors, $skill...);
+        }
+    }
+}
+@mixin add-styles($selectors, $color, $width){
+    @if $selectors == '.value' {
+        background-color: $color;
+        left: calc($width - 25px);
+    } @else if $selectors == '.value::after' {
+        border-color: $color transparent;
+    } @else if $selectors == '.slider .slider-progress' {
+        background-color: $color;
+        width: $width;
+    } @else if $selectors == '.slider .slider-progress::after' {
+        background-color: $color;
+    } @else if $selectors == '.slide-text' {
+        color: $color;
+    }
+}
+
+
+@mixin team-color($selectors) {
+    @each $i in (1,2,3) {
+        &:nth-child(#{$i}) #{$selectors} {
+            @if $i == 1 {
+                @if #{$selectors} == '.team-person-info .team-person-social i' {
+                    border: 1px solid $skills-first-color;
+                }
+                color: $skills-first-color;
+            } @else if $i == 2 {
+                @if #{$selectors} == '.team-person-info .team-person-social i' {
+                    border: 1px solid $skills-second-color;
+                }
+                color: $skills-second-color;
+            } @else if $i == 3 {
+                @if #{$selectors} == '.team-person-info .team-person-social i' {
+                    border: 1px solid $skills-third-color;
+                }
+                color: $skills-third-color;
+            }
+
+        }
+    }
+}
