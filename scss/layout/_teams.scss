@@ -1,7 +1,6 @@
 article.team {
     background-image: url("photos/pattern.png");
 
-
     .team-box {
         @include flex(space-between, row);
 
@@ -12,14 +11,24 @@ article.team {
             width: 30%;
             margin: 20px 0; 
 
+            @include lg {
+                @include flex(center, column);
+            }
+
             @include md {
                 width: 100%;
+                @include flex(center, row);
             }
 
             .team-person-photo {
-                width: 150px;
                 height: 130px;
                 margin-right: 25px;
+
+                @include lg {
+                    justify-content: center;
+                    width: 120px;
+                    height: 120px;
+                }
 
                 img {
                     border-radius: 50%;
@@ -42,6 +51,10 @@ article.team {
 
                 p {
                     color: rgb(164, 159, 159);
+
+                    @include lg {
+                        font-size: 12px;
+                    }
                 }
             }
 
