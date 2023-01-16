@@ -529,4 +529,88 @@ article.team .team-box .team-person .team-person-social i {
   text-align: center;
   border-radius: 50%;
   cursor: pointer;
+}
+
+article.contact .contact-detail .contact-detail-single {
+  margin: 10px 0 0 0;
+  display: flex;
+  width: 30%;
+  text-align: left;
+  color: rgb(164, 159, 159);
+}
+@media (max-width: 768px) {
+  article.contact .contact-detail .contact-detail-single {
+    margin: 5px 0;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+article.contact .contact-detail .contact-detail-single.social {
+  justify-content: flex-end;
+}
+article.contact .contact-detail .contact-detail-single.social i {
+  padding: 0 0 0 12px;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  article.contact .contact-detail .contact-detail-single.social i:nth-child(1) {
+    padding: 0;
+  }
+}
+@media (max-width: 768px) {
+  article.contact .contact-detail .contact-detail-single.social {
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+}
+article.contact .contact-detail .contact-detail-single .contact-detail-single-name {
+  padding-right: 18px;
+  color: #f1d204;
+}
+article.contact .contact-detail .contact-detail-single .contact-detail-single-value {
+  width: 50%;
+  padding-left: 18px;
+  border-left: 1px solid rgb(164, 159, 159);
+  line-height: 24px;
+}
+@media (max-width: 768px) {
+  article.contact .contact-detail .contact-detail-single .contact-detail-single-value {
+    border-left: none;
+    padding-left: 0;
+  }
+}
+article.contact .contact-form {
+  text-align: left;
+  width: 100%;
+  color: rgb(164, 159, 159);
+}
+article.contact .contact-form label {
+  display: block;
+}
+article.contact .contact-form input, article.contact .contact-form textarea {
+  color: rgb(164, 159, 159);
+  width: calc(100% - 18px);
+  outline: none;
+  padding: 8px;
+  border: 1px solid rgb(164, 159, 159);
+}
+article.contact .contact-form .contact-form-single {
+  width: 30%;
+}
+@media (max-width: 768px) {
+  article.contact .contact-form .contact-form-single {
+    margin: 5px 0;
+    width: 100%;
+  }
+}
+article.contact .contact-form .contact-form-message {
+  margin: 15px 0;
+  width: 100%;
+}
+article.contact .contact-form .contact-form-message textarea {
+  resize: none;
+}
+article.contact .contact-form button {
+  margin-left: auto;
+  background-color: rgb(248, 223, 1);
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,95 @@
+article.contact {
+    .contact-detail {
+        .contact-detail-single {
+            margin: 10px 0 0 0;
+            display: flex;
+            width: 30%;
+            text-align: left;
+            color: rgb(164, 159, 159);
+
+            @include md {
+                margin: 5px 0;
+                flex-direction: column;
+                width: 100%;
+            }
+
+            &.social {
+                justify-content: flex-end;
+
+                i {
+                    padding: 0 0 0 12px;
+                    cursor: pointer;
+
+                    &:nth-child(1) {
+                        @include md {
+                            padding: 0;
+                        }
+                    }
+                }
+
+                @include md {
+                    justify-content: flex-start;
+                    flex-direction: row;
+                }
+            }
+
+            .contact-detail-single-name {
+                padding-right: 18px;
+                color:#f1d204;
+            }
+
+            .contact-detail-single-value {
+                width: 50%;
+                padding-left: 18px;
+                border-left: 1px solid rgb(164, 159, 159);
+                line-height: 24px;
+
+                @include md {
+                    border-left: none;
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+
+    .contact-form {
+        text-align: left;
+        width: 100%;
+        color: rgb(164, 159, 159);
+
+        label {
+            display: block; 
+        }
+
+        input, textarea {
+            color: rgb(164, 159, 159);
+            width: calc(100% - 18px);
+            outline: none;
+            padding: 8px;
+            border: 1px solid rgb(164, 159, 159); 
+        }
+
+        .contact-form-single {
+            width: 30%;
+
+            @include md {
+                margin: 5px 0;
+                width: 100%;
+            }
+        }
+
+        .contact-form-message {
+            margin: 15px 0;
+            width: 100%;
+
+            textarea {
+                resize: none;
+            }
+        }
+
+        button {
+            margin-left: auto;
+            background-color: $primary-color;
+         }
+    }
+}
