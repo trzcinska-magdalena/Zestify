@@ -1,3 +1,5 @@
+@use "sass:map";
+
 @mixin sm {
     @media (max-width: #{$screen-sm-max}) {
         @content;
@@ -28,28 +30,40 @@
     flex-direction: $flex-direction;
 }
 
-@mixin skills-color($selectors) {
+@mixin slide__value {
     @each $i, $skill in $skills-values {
-        &:nth-child(#{$i}) #{$selectors} {
-            @include add-styles($selectors, $skill...);
+        &:nth-child(#{$i}) .slide__value {
+            background-color: map.get($skill, color);
+            left: calc(map.get($skill, width) - 25px);
+        }
+
+        &:nth-child(#{$i}) .slide__value::after {
+            border-color: map.get($skill, color) transparent;
         }
     }
 }
-@mixin add-styles($selectors, $color, $width){
-    @if $selectors == '.value' {
-        background-color: $color;
-        left: calc($width - 25px);
-    } @else if $selectors == '.value::after' {
-        border-color: $color transparent;
-    } @else if $selectors == '.slider .slider-progress' {
-        background-color: $color;
-        width: $width;
-    } @else if $selectors == '.slider .slider-progress::after' {
-        background-color: $color;
-    } @else if $selectors == '.slide-text' {
-        color: $color;
+
+@mixin slider__progress {
+    @each $i, $skill in $skills-values {
+        &:nth-child(#{$i}) .slider__progress {
+            background-color: map.get($skill, color);
+            width: map.get($skill, width);
+        }
+
+        &:nth-child(#{$i}) .slider__progress::after {
+            background-color: map.get($skill, color);
+        }
     }
 }
+
+@mixin slide__text {
+    @each $i, $skill in $skills-values {
+        &:nth-child(#{$i}) .slide__text {
+            color: map.get($skill, color);
+        }
+    }
+}
+
 
 
 @mixin team-color($selectors) {

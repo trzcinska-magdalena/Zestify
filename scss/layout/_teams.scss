@@ -2,7 +2,9 @@ article.team {
     background-image: url("photos/pattern.png");
 
     .team-box {
-        @include flex(space-between, row);
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
 
         .team-person {
             @include flex(center, row);
@@ -12,12 +14,14 @@ article.team {
             margin: 20px 0; 
 
             @include lg {
-                @include flex(center, column);
+                justify-content: center;
+                flex-direction: column;
             }
 
             @include md {
                 width: 100%;
-                @include flex(center, row);
+                //justify-content: center;
+                flex-direction: row;
             }
 
             .team-person-photo {

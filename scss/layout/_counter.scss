@@ -1,7 +1,9 @@
 article.counter {
-    @include flex(space-between, row);
-    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
     position: relative;
+    padding: 20px 0;
     background-image: url(../photos/header.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;

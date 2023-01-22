@@ -1,19 +1,13 @@
 article.blog {
-    background-color: #222f36;
+    background-color: rgb(34, 47, 54);
 
     .info {
         h1 {
-            color: #fff;
+            color: rgb(255,255,255);
         }
 
-        button {
+        .btn--yellow {
             margin: 30px;
-            background-color: $primary-color;
-            transition: .2s;
-
-            &:hover {
-                background-color: $secondary-color;
-            }
         }
     }
 
@@ -21,22 +15,20 @@ article.blog {
         text-align: left;
 
         .post {
-            background-color: #fff;
-
             display: flex;
             flex-direction: column;
             width: 30%;
-            
+            background-color: rgb(255,255,255);
+
             @include sm {
                 width: 100%;
             }
 
             img {
-                width: 100%;
                 height: 200px;
             }
 
-            .post-text {
+            &__text {
                 margin: 10px;
 
                 h3 {
@@ -53,13 +45,12 @@ article.blog {
                     }
                 }
                
-                button.read-more {
+                .btn--read-more {
+                    width: 100px;
+                    height: 20px;
                     padding: 0;
                     margin: 20px 0 0 0;
                     color: $primary-color;
-                    width: 100px;
-                    transform: .2;
-                    height: 20px;
 
                     &:hover {
                         color: $secondary-color;

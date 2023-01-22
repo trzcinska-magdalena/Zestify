@@ -1,15 +1,14 @@
-article {
+article.about {
     .skills-box {
         .slide {
             width: 30%;
             
-            @include skills-color('.value');
-            @include skills-color('.value::after');
-            .value {
+            @include slide__value();
+            &__value {
+                position: relative;
                 width: 50px;
                 height: 24px;
-                position: relative;
-                color: #fff;
+                color: rgb(255, 255, 255);
                 font-size: 14px;
                 line-height: 24px;
                 text-align: center;
@@ -18,25 +17,24 @@ article {
                 &::after {
                     content: '';
                     position: absolute;
+                    bottom: -4px;
+                    left: 50%;
                     display: block;
                     width: 0;
                     z-index: 1;
                     border-style: solid;
                     border-width: 4px 4px 0;
-                    bottom: -4px;
-                    left: 50%;
                     margin-left: -4px;
                 }
             }
 
-            @include skills-color('.slider .slider-progress');
-            @include skills-color('.slider .slider-progress::after');
+            @include slider__progress();
             .slider {
-                margin-top: 13px;
-                background-color: #E8E8E8;
                 width: 100%;
-
-                .slider-progress {
+                margin-top: 13px;
+                background-color: rgb(232, 232, 232);
+        
+                &__progress {
                     height: 2px;
                     position: relative;
 
@@ -53,8 +51,8 @@ article {
                 }
             }
 
-            @include skills-color('.slide-text');
-            .slide-text {
+            @include slide__text();
+            &__text {
                 margin: 20px 0;
                 text-align: left;
 

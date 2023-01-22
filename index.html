@@ -15,18 +15,18 @@
 
 <body>
   <header>
-    <nav>
+    <div class="container">
       <a href="#" class="logo">zestify</a>
 
       <ul class="navigation">
-        <li class="open" id="open"><i class="fa-solid fa-xmark"></i></li>
-        <li class="hidden-mobile"><a href="#about">About</a></li>
-        <li class="hidden-mobile"><a href="#projects">Portfolio</a></li>
-        <li class="hidden-mobile"><a href="#blog">Blog</a></li>
-        <li class="hidden-mobile"><a href="#team">Our Team</a></li>
-        <li class="hidden-mobile"><a href="#contact">Contact Us</a></li>
+        <li class="navigation__item navigation__item--open" id="open"><i class="fa-solid fa-xmark"></i></li>
+        <li class="navigation__item navigation__item--hidden-mobile"><a href="#about">About</a></li>
+        <li class="navigation__item navigation__item--hidden-mobile"><a href="#projects">Portfolio</a></li>
+        <li class="navigation__item navigation__item--hidden-mobile"><a href="#blog">Blog</a></li>
+        <li class="navigation__item navigation__item--hidden-mobile"><a href="#team">Our Team</a></li>
+        <li class="navigation__item hidden-mobile"><a href="#contact">Contact Us</a></li>
       </ul>
-    </nav>
+    </div>
 
     <div class="main-banner">
       <h2>Clean<span>.</span>Slick<span>.</span>Pixel</h2>
@@ -34,8 +34,8 @@
       <p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus ac neque
         dignissim lacus sagittis tristique quis eleifend turpis.</p>
 
-      <button class="learn-more">Learn more</button>
-      <button class="download">Download</button>
+      <button class="btn btn--learn-more">Learn more</button>
+      <button class="btn btn--yellow">Download</button>
     </div>
   </header>
 
@@ -49,33 +49,32 @@
 
     <div class="skills-box box">
       <div class="slide">
-        <div class="value">60%</div>
+        <div class="slide__value">60%</div>
         <div class="slider">
-          <div class="slider-progress"></div>
+          <div class="slider__progress"></div>
         </div>
-
-        <div class="slide-text">
+        <div class="slide__text">
           <i class="fa-solid fa-font"></i>Typography
         </div>
       </div>
 
       <div class="slide">
-        <div class="value">80%</div>
+        <div class="slide__value">80%</div>
         <div class="slider">
-          <div class="slider-progress"></div>
+          <div class="slider__progress"></div>
         </div>
 
-        <div class="slide-text">
+        <div class="slide__text">
           <i class="fa-sharp fa-solid fa-pen"></i> Design
         </div>
       </div>
 
       <div class="slide">
-        <div class="value">50%</div>
+        <div class="slide__value">50%</div>
         <div class="slider">
-          <div class="slider-progress"></div>
+          <div class="slider__progress"></div>
         </div>
-        <div class="slide-text">
+        <div class="slide__text">
           <i class="fa-solid fa-code"></i> Development
         </div>
       </div>
@@ -89,11 +88,11 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </div>
 
-    <div class="projects-box">
-      <div class="project"><img src="photos/header.jpg"></div>
-      <div class="project"><img src="photos/header.jpg"></div>
-      <div class="project"><img src="photos/header.jpg"></div>
-      <div class="project"><img src="photos/header.jpg"></div>
+    <div class="project__box">
+      <div class="project__item"><img src="photos/header.jpg"></div>
+      <div class="project__item"><img src="photos/header.jpg"></div>
+      <div class="project__item"><img src="photos/header.jpg"></div>
+      <div class="project__item"><img src="photos/header.jpg"></div>
     </div>
   </article>
 
@@ -102,43 +101,43 @@
       <h1>Latest News</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
-      <button>See blog</button>
+      <button class="btn btn--yellow">See blog</button>
     </div>
 
     <div class="posts-box box">
       <div class="post">
         <img src="photos/header.jpg">
 
-        <div class="post-text">
+        <div class="post__text">
           <h3>Duis suscipit tempor</h3>
           <span>Proin convallis nibh vel massa porttitor, vel posuere enim cursus. Efficitur id sapien
             nec, iaculis convallis leo.</span>
         
-          <button class="read-more">> Read more</button>
+          <button class="btn btn--read-more">> Read more</button>
         </div>
       </div>
 
       <div class="post">
         <img src="photos/header.jpg">
 
-        <div class="post-text">
+        <div class="post__text">
           <h3>Duis suscipit tempor</h3>
           <span>Proin convallis nibh vel massa porttitor, vel posuere enim cursus. Efficitur id sapien
             nec, iaculis convallis leo.</span>
 
-          <button class="read-more">> Read more</button>
+          <button class="btn btn--read-more">> Read more</button>
         </div>
       </div>
 
       <div class="post">
         <img src="photos/header.jpg">
 
-        <div class="post-text">
+        <div class="post__text">
           <h3>Duis suscipit tempor</h3>
           <span>Proin convallis nibh vel massa porttitor, vel posuere enim cursus. Efficitur id sapien
             nec, iaculis convallis leo.</span>
 
-          <button class="read-more">> Read more</button>
+          <button class="btn btn--read-more">> Read more</button>
         </div>
       </div>
     </div>
@@ -211,7 +210,6 @@
       </div>
     </div>
   </article>
-
   
   <article id="contact" class="contact">
     <div class="info">
