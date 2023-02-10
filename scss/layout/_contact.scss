@@ -1,19 +1,36 @@
 article.contact {
     .contact-detail {
-        .contact-detail-single {
+        .contact__item {
+            width: 30%;
             margin: 10px 0 0 0;
             display: flex;
-            width: 30%;
             text-align: left;
-            color: rgb(164, 159, 159);
+            color: $grey-color-paragraphs;
 
             @include md {
+                width: 100%;
                 margin: 5px 0;
                 flex-direction: column;
-                width: 100%;
             }
 
-            &.social {
+            &__name {
+                padding-right: 18px;
+                color: $primary-color;
+            }
+
+            &__value {
+                width: 50%;
+                padding-left: 18px;
+                border-left: 1px solid $grey-color-paragraphs;
+                line-height: 24px;
+
+                @include md {
+                    border-left: none;
+                    padding-left: 0;
+                }
+            }
+
+            .contact__social {
                 justify-content: flex-end;
 
                 i {
@@ -32,44 +49,27 @@ article.contact {
                     flex-direction: row;
                 }
             }
-
-            .contact-detail-single-name {
-                padding-right: 18px;
-                color:#f1d204;
-            }
-
-            .contact-detail-single-value {
-                width: 50%;
-                padding-left: 18px;
-                border-left: 1px solid rgb(164, 159, 159);
-                line-height: 24px;
-
-                @include md {
-                    border-left: none;
-                    padding-left: 0;
-                }
-            }
         }
     }
 
     .contact-form {
         text-align: left;
         width: 100%;
-        color: rgb(164, 159, 159);
+        color: $grey-color-paragraphs;
 
         label {
             display: block; 
         }
 
         input, textarea {
-            color: rgb(164, 159, 159);
+            color: $grey-color-paragraphs;
             width: calc(100% - 18px);
             outline: none;
             padding: 8px;
-            border: 1px solid rgb(164, 159, 159); 
+            border: 1px solid $grey-color-paragraphs; 
         }
 
-        .contact-form-single {
+        &__item {
             width: 30%;
 
             @include md {
@@ -78,7 +78,7 @@ article.contact {
             }
         }
 
-        .contact-form-message {
+        &__item--message {
             margin: 15px 0;
             width: 100%;
 

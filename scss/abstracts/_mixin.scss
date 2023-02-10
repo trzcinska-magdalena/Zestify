@@ -5,20 +5,20 @@
         @content;
     }
 }
- 
- @mixin md {
+
+@mixin md {
     @media (max-width: #{$screen-md-max}) {
         @content;
     }
 }
- 
- @mixin lg {
+
+@mixin lg {
     @media (max-width: #{$screen-lg-max}) {
         @content;
     }
 }
- 
- @mixin xl {
+
+@mixin xl {
     @media (max-width: #{$screen-xl-max}) {
         @content;
     }
@@ -64,28 +64,29 @@
     }
 }
 
-
-
-@mixin team-color($selectors) {
-    @each $i in (1,2,3) {
-        &:nth-child(#{$i}) #{$selectors} {
+@mixin team__color {
+    @each $i in (1, 2, 3) {
+        &:nth-child(#{$i}) .team__person__info .team__person__social i {
             @if $i == 1 {
-                @if #{$selectors} == '.team-person-info .team-person-social i' {
-                    border: 1px solid $skills-first-color;
-                }
+                border: 1px solid $skills-first-color;
                 color: $skills-first-color;
             } @else if $i == 2 {
-                @if #{$selectors} == '.team-person-info .team-person-social i' {
-                    border: 1px solid $skills-second-color;
-                }
+                border: 1px solid $skills-second-color;
                 color: $skills-second-color;
             } @else if $i == 3 {
-                @if #{$selectors} == '.team-person-info .team-person-social i' {
-                    border: 1px solid $skills-third-color;
-                }
+                border: 1px solid $skills-third-color;
                 color: $skills-third-color;
             }
+        }
 
+        &:nth-child(#{$i}) .team__person__info h4 {
+            @if $i == 1 {
+                color: $skills-first-color;
+            } @else if $i == 2 {
+                color: $skills-second-color;
+            } @else if $i == 3 {
+                color: $skills-third-color;
+            }
         }
     }
 }

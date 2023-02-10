@@ -144,17 +144,17 @@
   </article>
 
   <article id="counter" class="counter">
-    <div class="counter-single">
+    <div class="counter__item">
       <h2>200</h2>
       <span>PROJECTS</span>
     </div>
 
-    <div class="counter-single">
+    <div class="counter__item">
       <h2>200</h2>
       <span>PROJECTS</span>
     </div>
 
-    <div class="counter-single">
+    <div class="counter__item">
       <h2>200</h2>
       <span>PROJECTS</span>
     </div>
@@ -167,13 +167,13 @@
     </div>
 
     <div class="team-box box">
-      <div class="team-person">
-        <div class="team-person-photo"><img src="photos/header.jpg" alt="person"></div>
-        <div class="team-person-info">
+      <div class="team__person">
+        <div class="team__person__photo"><img src="photos/header.jpg" alt="person"></div>
+        <div class="team__person__info">
           <h3>Mark Lawrance</h3>
           <h4>Web Designer</h4>
           <p>Creative, detail-oriented, always focused.</p>
-          <div class="team-person-social">
+          <div class="team__person__social">
             <i class="fa-brands fa-facebook-f"></i>
             <i class="fa-brands fa-twitter"></i>
             <i class="fa-brands fa-linkedin-in"></i>
@@ -181,13 +181,13 @@
         </div>
       </div>
 
-      <div class="team-person">
-        <div class="team-person-photo"><img src="photos/header.jpg" alt="person"></div>
-        <div class="team-person-info">
+      <div class="team__person">
+        <div class="team__person__photo"><img src="photos/header.jpg" alt="person"></div>
+        <div class="team__person__info">
           <h3>Mark Lawrance</h3>
           <h4>Web Designer</h4>
           <p>Creative, detail-oriented, always focused.</p>
-          <div class="team-person-social">
+          <div class="team__person__social">
             <i class="fa-brands fa-facebook-f"></i>
             <i class="fa-brands fa-twitter"></i>
             <i class="fa-brands fa-linkedin-in"></i>
@@ -195,13 +195,13 @@
         </div>
       </div>
 
-      <div class="team-person">
-        <div class="team-person-photo"><img src="photos/header.jpg" alt="person"></div>
-        <div class="team-person-info">
+      <div class="team__person">
+        <div class="team__person__photo"><img src="photos/header.jpg" alt="person"></div>
+        <div class="team__person__info">
           <h3>Mark Lawrance</h3>
           <h4>Web Designer</h4>
           <p>Creative, detail-oriented, always focused.</p>
-          <div class="team-person-social">
+          <div class="team__person__social">
             <i class="fa-brands fa-facebook-f"></i>
             <i class="fa-brands fa-twitter"></i>
             <i class="fa-brands fa-linkedin-in"></i>
@@ -217,49 +217,48 @@
     </div>
 
     <div class="contact-detail box">
-      <div class="contact-detail-single">
-        <div class="contact-detail-single-name">Address</div>
-        <div class="contact-detail-single-value">Street 221B Baker Street, <br> London, UK</div>
+      <div class="contact__item">
+        <div class="contact__item__name">Address</div>
+        <div class="contact__item__value">Street 221B Baker Street, <br> London, UK</div>
       </div>
 
-      <div class="contact-detail-single">
-        <div class="contact-detail-single-name">Customer Support</div>
-        <div class="contact-detail-single-value">E-mail: contact@site.com <br> Phone: (555) 555-5555</div>
+      <div class="contact__item">
+        <div class="contact__item__name">Customer Support</div>
+        <div class="contact__item__value">E-mail: contact@site.com <br> Phone: (555) 555-5555</div>
       </div>
 
-      <div class="contact-detail-single social">
+      <div class="contact__item contact__social">
         <i class="fa-brands fa-facebook-f"></i>
         <i class="fa-brands fa-twitter"></i>
         <i class="fa-brands fa-linkedin-in"></i>
       </div>
 
       <form action="#" class="contact-form box">
-        <div class="contact-form-single">
+        <div class="contact-form__item">
           <label for="name">Name</label>
           <input type="text" id="name" name="firstname" required>
         </div>
     
-        <div class="contact-form-single">
+        <div class="contact-form__item">
           <label for="mail">E-mail</label>
           <input type="email" id="mail" name="mail" required>
         </div>
 
-        <div class="contact-form-single">
+        <div class="contact-form__item">
           <label for="subject">Subject</label>
           <input type="text" id="subject" name="subject">
         </div>
 
-        <div class="contact-form-message">
+        <div class="contact-form__item--message">
           <label for="message">Message</label>
           <textarea id="message" name="message" rows="10" required></textarea>
         </div>
 
-        <button type="submit">Send</button>
+        <button type="submit" class="btn">Send</button>
       </form>
     </div>
   </article>
   <script src="index.js"></script>
-
 </body>
 
 </html>

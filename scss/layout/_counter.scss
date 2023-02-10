@@ -10,7 +10,7 @@ article.counter {
     background-size: cover;
 
     @include md {
-        @include flex(space-between, column);
+        flex-direction: column;
         padding: 0;
     }
 
@@ -23,7 +23,7 @@ article.counter {
         width: 100%; 
     }
 
-    .counter-single {
+    .counter__item {
         margin: 10px 0;
         z-index: 200;
         color: #fff;
