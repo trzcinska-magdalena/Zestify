@@ -1,5 +1,5 @@
 # Zestify
-![My Image](photos/ex1.png)
+![My Image](photos/ex1.png | width=100)
 ![My Image](photos/ex2.png)
 ![My Image](photos/ex2_2.png)
 ![My Image](photos/ex3.png)
