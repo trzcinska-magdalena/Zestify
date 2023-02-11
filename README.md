@@ -1,6 +1,6 @@
 # Zestify
 
-<img src="photos/ex1.png" width="150" height="280">
+<img src="photos/ex1.png" width="946" height="464">
 
 ![My Image](photos/ex2.png)
 ![My Image](photos/ex2_2.png)
