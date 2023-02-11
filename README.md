@@ -1,6 +1,6 @@
 # Zestify
 
-<img src="photos/ex1.png" width="30%" height="30%">    <img src="photos/ex1_2.png" width="30%" height="30%"> <br/>
+<img src="photos/ex1.png" width="30%" height="30%">
 <img src="photos/ex2.png" width="30%" height="30%">
 <img src="photos/ex3.png" width="30%" height="30%">
 <img src="photos/ex4.png" width="30%" height="30%">
