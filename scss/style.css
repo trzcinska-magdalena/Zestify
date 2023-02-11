@@ -443,20 +443,20 @@ article.contact .contact-detail .contact__item__value {
     padding-left: 0;
   }
 }
-article.contact .contact-detail .contact__item .contact__social {
+article.contact .contact-detail .contact__social {
   justify-content: flex-end;
 }
-article.contact .contact-detail .contact__item .contact__social i {
+article.contact .contact-detail .contact__social i {
   padding: 0 0 0 12px;
   cursor: pointer;
 }
 @media (max-width: 768px) {
-  article.contact .contact-detail .contact__item .contact__social i:nth-child(1) {
+  article.contact .contact-detail .contact__social i:nth-child(1) {
     padding: 0;
   }
 }
 @media (max-width: 768px) {
-  article.contact .contact-detail .contact__item .contact__social {
+  article.contact .contact-detail .contact__social {
     justify-content: flex-start;
     flex-direction: row;
   }

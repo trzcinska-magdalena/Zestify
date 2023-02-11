@@ -29,25 +29,25 @@ article.contact {
                     padding-left: 0;
                 }
             }
+        }
 
-            .contact__social {
-                justify-content: flex-end;
+        .contact__social {
+            justify-content: flex-end;
 
-                i {
-                    padding: 0 0 0 12px;
-                    cursor: pointer;
+            i {
+                padding: 0 0 0 12px;
+                cursor: pointer;
 
-                    &:nth-child(1) {
-                        @include md {
-                            padding: 0;
-                        }
+                &:nth-child(1) {
+                    @include md {
+                        padding: 0;
                     }
                 }
+            }
 
-                @include md {
-                    justify-content: flex-start;
-                    flex-direction: row;
-                }
+            @include md {
+                justify-content: flex-start;
+                flex-direction: row;
             }
         }
     }
